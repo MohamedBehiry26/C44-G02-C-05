@@ -98,35 +98,85 @@
             //int? Y = 10;
             //Y=x; // Implicit conversion from int to int?
 
-            int? x = 10;
-            x= null; // Nullable int can be assigned null
-            //int Y =(int)x; // Unboxing from int? to int, will throw an exception if x is null
-            if (x != null)
-            {
-                Y = (int)x; // Safe unboxing, only if x is not null
-            }
-            else
-            {
-                Y = 0; // Default value if x is null
-            }
-            Console.WriteLine(Y); // Output: 0 if x is null, otherwise the value of x
+            //int? x = 10;
+            //x= null; // Nullable int can be assigned null
+            ////int Y =(int)x; // Unboxing from int? to int, will throw an exception if x is null
+            //if (x != null)
+            //{
+            //    Y = (int)x; // Safe unboxing, only if x is not null
+            //}
+            //else
+            //{
+            //    Y = 0; // Default value if x is null
+            //}
+            //Console.WriteLine(Y); // Output: 0 if x is null, otherwise the value of x
 
-            if(x is not null)
-            {
-                Y = (int)x; // Safe unboxing, only if x is not null
-            }
-            else
-            {
-                Y = 0; // Default value if x is null
-            }
+            //if(x is not null)
+            //{
+            //    Y = (int)x; // Safe unboxing, only if x is not null
+            //}
+            //else
+            //{
+            //    Y = 0; // Default value if x is null
+            //}
 
-            y = x is not null ? (int)x : 0; // Using the null-coalescing operator to provide a default value
-            Console.WriteLine(Y); // Output: 0 if x is null, otherwise the value of x
+            //y = x is not null ? (int)x : 0; // Using the null-coalescing operator to provide a default value
+            //Console.WriteLine(Y); // Output: 0 if x is null, otherwise the value of x
 
-            y = x ?? 0; // Using the null-coalescing operator to provide a default value
-            Console.WriteLine(Y); // Output: 0 if x is null, otherwise the value of x
+            //y = x ?? 0; // Using the null-coalescing operator to provide a default value
+            //Console.WriteLine(Y); // Output: 0 if x is null, otherwise the value of x
             #endregion
 
+
+            #endregion
+
+            #region null propagration operator
+            //double salary = default;
+            //Console.WriteLine(salary);
+
+            //int[] Arr;
+            //Arr = default;
+            //for (int i = 0; i < Arr.Length; i++)
+            //{
+            //    Console.WriteLine(Arr[i]);
+            //}
+
+            //for (int i = 0;(Arr is not null) && (i < Arr.Length); i++)
+            //{
+            //    Console.WriteLine(Arr[i]);
+            //}
+
+            //for (int i = 0; i < Arr?.Length; i++)
+            //{
+            //    Console.WriteLine(Arr[i]);
+            //}
+
+            //if (Arr is not null)
+            //{
+            //    for (int i = 0; i < Arr.Length; i++)
+            //    {
+            //        Console.WriteLine(Arr[i]);
+            //    }
+            //}
+
+
+
+            //Employee {id, name ,Department}
+            //Department { DeptId , DeptName}
+            //Employee?.Department?.DetName
+
+            //int[] Numbers = { 1, 2, 3 };
+            //Numbers = null;
+
+            //Console.WriteLine(Numbers?.Length);
+            //int? Num = null;
+            //Console.WriteLine(Num);
+
+            #endregion
+
+            #region null forgeviness operator
+            string Name = null!;
+            string email = _config["Email"]!; // Using null-forgiving operator to suppress the warning
 
             #endregion
         }
