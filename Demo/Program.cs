@@ -194,14 +194,28 @@
             #endregion
 
             #region function 2 swap
-            static void Swap(ref int a, ref int b)
-            {
-                int temp = a;
-                a = b;
-                b = temp;
-            }
+            //static void Swap(ref int a, ref int b)
+            //{
+            //    int temp = a;
+            //    a = b;
+            //    b = temp;
+            //}
             //int x = 5, y = 10;
             #endregion
+
+            #region function [reference type parameter] [ passing by value, by reference]
+            #region example1
+         // passing by value
+                int[] number  = { 1, 2, 3, 4, 5 };
+            int result = SumArray(number);
+            Console.WriteLine(result);
+                Console.WriteLine(number [0]);
+
+            #endregion
+
+
+            #endregion
+
             #region \ @
             //Console.WriteLine("Hello/n rld!");
             //Console.WriteLine(@"Hello\n rld!"); // Using verbatim string literal to ignore escape sequences
@@ -212,12 +226,25 @@
 
             #region function [value type parameter] [ passing by value, by reference]
             //passing by value
-            int a= 5, b = 10;
-            Console.WriteLine($"a before swap= {a}");
-            Console.WriteLine($"b before swap= {b}");
-            Swap(a,b); // This will not swap the values because a and b are passed by value
-            Console.WriteLine($"a after swap= {a}"); // a will still be 5
-            Console.WriteLine($"b after swap= {b}"); // b will still be 10
+            //int a= 5, b = 10;
+            //Console.WriteLine($"a before swap= {a}");
+            //Console.WriteLine($"b before swap= {b}");
+            //Swap(a,b); // This will not swap the values because a and b are passed by value
+            //Console.WriteLine($"a after swap= {a}"); // a will still be 5
+            //Console.WriteLine($"b after swap= {b}"); // b will still be 10
+
+            #endregion
+
+            #region Function 3 [sumArray change element]
+            static int SumArray(int[] arr)
+            {
+                int sum = 0;
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    sum += arr[i];
+                }
+                return sum;
+            }
 
             #endregion
         }
