@@ -311,6 +311,37 @@ namespace Demo
         //    return sum;
 
         #endregion
+
+        #region  Exception 
+        //1.SystemException
+        //1.1 FormatException
+        //1.2 indexOutOfRangeException
+        //1.3 NullReferenceException
+        //1.4 invalidCastException
+        //1.5 ArithmeticException
+        //5.1 DivideByZeroException
+        //5.2 OverflowException
+        //2.ApplicationException
+
+
+
+
+        #endregion
+
+        #region function 7 [DoSomeCode - DoSomeCleanCode]
+        //static void DoSomeCode()
+        //{
+        //    int x = int.Parse(Console.ReadLine());
+        //    int Y = int.Parse(Console.ReadLine());
+        //    int Divison = x / Y;
+        //    Console.WriteLine(Divison);
+        //    int[] Arr = { 1, 2, 3 };
+        //    Arr[100] = 10;
+
+        //}
+           
+
+        #endregion
     }
 }
 
