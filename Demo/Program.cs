@@ -205,11 +205,11 @@
 
             #region function [reference type parameter] [ passing by value, by reference]
             #region example1
-         // passing by value
-                int[] number  = { 1, 2, 3, 4, 5 };
-            int result = SumArray(number);
-            Console.WriteLine(result);
-                Console.WriteLine(number [0]);
+            //// passing by value
+            //       int[] number  = { 1, 2, 3, 4, 5 };
+            //   int result = SumArray(number);
+            //   Console.WriteLine(result);
+            //       Console.WriteLine(number [0]);
 
             #endregion
 
@@ -236,17 +236,45 @@
             #endregion
 
             #region Function 3 [sumArray change element]
-            static int SumArray(int[] arr)
-            {
-                int sum = 0;
-                for (int i = 0; i < arr.Length; i++)
-                {
-                    sum += arr[i];
-                }
-                return sum;
-            }
+            //static int SumArray(int[] arr)
+            //{
+            //    int sum = 0;
+            //    for (int i = 0; i < arr.Length; i++)
+            //    {
+            //        sum += arr[i];
+            //    }
+            //    return sum;
+            //}
 
             #endregion
-        }
+
+            #region Function 4 [sumArray change element by reference]
+            //static void SumArray(ref int[] arr)
+            {
+                //int sum = 0;
+                //if (Arr is not null)
+                //    {
+                //    Arr[0] = 100;
+                //    for (int i = 0; i < Arr.Length; i++)
+                //    {
+                //        sum += Arr[i];
+                //    }
+                //    return sum;
+                }
+            }
+
+
+        #endregion
+
+        #region example 2
+    //    //passing by value
+    //    int[] Numbers = { 1, 2, 3, 4, 5 };
+    //    int result = SumArray(Numbers);
+    //    Console.WriteLine(result);
+    //Console.WriteLine(Numbers[0]); // This will print the original value of Numbers[0] because it is passed by value
+
+
+        #endregion
     }
+}
 }
