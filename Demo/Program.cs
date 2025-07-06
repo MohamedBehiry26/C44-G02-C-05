@@ -1,4 +1,7 @@
-﻿namespace Demo
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Numerics;
+
+namespace Demo
 {
     internal class Program
     {
@@ -267,14 +270,34 @@
         #endregion
 
         #region example 2
-    //    //passing by value
-    //    int[] Numbers = { 1, 2, 3, 4, 5 };
-    //    int result = SumArray(Numbers);
-    //    Console.WriteLine(result);
-    //Console.WriteLine(Numbers[0]); // This will print the original value of Numbers[0] because it is passed by value
+        //    //passing by value
+        //    int[] Numbers = { 1, 2, 3, 4, 5 };
+        //    int result = SumArray(Numbers);
+        //    Console.WriteLine(result);
+        //Console.WriteLine(Numbers[0]); // This will print the original value of Numbers[0] because it is passed by value
 
+
+        #endregion
+
+        #region function 5 [MultiplySum]
+        //static int MultiplySum (int x , int y ) 
+        //{
+        //    return x * y;
+        //    return x + y;
+        //}
+
+
+
+
+        #endregion
+
+        #region Function [ passing by out] [ sumMultiply]
+        //int A = 10, B = 5;
+        //Multiplysum(A, B, out Sum , out IMultiply);
+        //Console.writeLine(Sum);
+        //Console.writeLine(Multiply);
 
         #endregion
     }
 }
-}
+
