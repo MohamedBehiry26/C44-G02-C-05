@@ -182,23 +182,43 @@
 
 
             #region funcion 1
-            static void printshape(int counter =10 , string pattern = "Shape")
-            {
-                for (int i = 0; i < counter; i++)
-                {
-                    Console.WriteLine(pattern + " " + i);
-                }
-            }
+            //static void printshape(int counter =10 , string pattern = "Shape")
+            //{
+            //    for (int i = 0; i < counter; i++)
+            //    {
+            //        Console.WriteLine(pattern + " " + i);
+            //    }
+            //}
 
 
             #endregion
 
+            #region function 2 swap
+            static void Swap(ref int a, ref int b)
+            {
+                int temp = a;
+                a = b;
+                b = temp;
+            }
+            //int x = 5, y = 10;
+            #endregion
             #region \ @
             //Console.WriteLine("Hello/n rld!");
             //Console.WriteLine(@"Hello\n rld!"); // Using verbatim string literal to ignore escape sequences
             //Console.WriteLine("hello \\ world!");
             //Console.WriteLine("hello \t world!");
             //string filePath ="C:\Users\Documents\file.txt"; // Using verbatim string literal for file paths
+            #endregion
+
+            #region function [value type parameter] [ passing by value, by reference]
+            //passing by value
+            int a= 5, b = 10;
+            Console.WriteLine($"a before swap= {a}");
+            Console.WriteLine($"b before swap= {b}");
+            Swap(a,b); // This will not swap the values because a and b are passed by value
+            Console.WriteLine($"a after swap= {a}"); // a will still be 5
+            Console.WriteLine($"b after swap= {b}"); // b will still be 10
+
             #endregion
         }
     }
