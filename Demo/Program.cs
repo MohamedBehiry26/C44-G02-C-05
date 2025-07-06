@@ -298,6 +298,19 @@ namespace Demo
         //Console.writeLine(Multiply);
 
         #endregion
+
+        #region Function 6 [summArr params]
+        //static int sumArray(int[] Arr)
+        //    {
+        //    int sum = 0;
+        //    if(Arr is not null)
+        //    {
+        //        for(int i = 0; i< Arr.Length;i++)
+        //            { sum += Arr[i]; }
+        //    }
+        //    return sum;
+
+        #endregion
     }
 }
 
