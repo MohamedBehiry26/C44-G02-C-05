@@ -175,9 +175,30 @@
             #endregion
 
             #region null forgeviness operator
-            string Name = null!;
-            string email = _config["Email"]!; // Using null-forgiving operator to suppress the warning
+            //string Name = null!;
+            //string email = _config["Email"]!; // Using null-forgiving operator to suppress the warning
 
+            #endregion
+
+
+            #region funcion 1
+            static void printshape(int counter =10 , string pattern = "Shape")
+            {
+                for (int i = 0; i < counter; i++)
+                {
+                    Console.WriteLine(pattern + " " + i);
+                }
+            }
+
+
+            #endregion
+
+            #region \ @
+            //Console.WriteLine("Hello/n rld!");
+            //Console.WriteLine(@"Hello\n rld!"); // Using verbatim string literal to ignore escape sequences
+            //Console.WriteLine("hello \\ world!");
+            //Console.WriteLine("hello \t world!");
+            //string filePath ="C:\Users\Documents\file.txt"; // Using verbatim string literal for file paths
             #endregion
         }
     }
